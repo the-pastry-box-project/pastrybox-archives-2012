@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en" class="">
+  <head>
+    <meta charset="utf-8">
+    <title>The Pastry Box Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="@alexduloz">
+    <style>
+    	* {
+    		margin: 0;
+    		padding: 0;
+    		-webkit-box-sizing: border-box;
+  			-moz-box-sizing: border-box;
+  			box-sizing: border-box;
+    		}
+    		
+		body {
+			width: 100%;
+			max-width: 800px;
+			padding: 40px 20px 0 20px;
+			margin: 0 auto;
+			padding-top: 40px;
+			font-size: 24px;
+			line-height: 1.4;
+			color: #333;
+			font-family: "Georgia", serif;
+			overflow-y: scroll;
+			}
+		
+		p, ul, ol, blockquote, figure, pre, iframe {
+			margin-bottom: 30px;
+			}
+		
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: bold;
+			font-family: "Helvetica", sans-serif;
+			margin-bottom: 0;
+			}
+		
+		a {
+			color: #333;
+			text-decoration: none;
+			border-bottom: 2px solid #333;
+			}
+		
+		ul {
+			list-style-type: disc;
+			}
+		
+		ul, ol {
+			padding-left: 25px;
+			}
+			
+		li {
+		 	margin-bottom: 5px;
+		 	}
+		 
+		.thought-content {
+			margin-bottom: 60px;
+			border-bottom: 1px solid #aaa;
+		 	}
+		 
+		.project {
+		 	font-size: 30px;
+		 	margin: 40px 0 60px 0;
+		 	}
+		 	
+		blockquote {
+		 	width: 75%;
+		 	margin-left: auto;
+		 	margin-right: auto;
+		 	color: #777;
+		 	border-left: double 4px #ccc;
+		 	font-style: italic;
+		 	padding-left: 20px;
+		 	font-size: .9em;
+		 	}
+		 
+		figcaption {
+		 	text-align: right;
+		 	}
+		 
+		code {
+		 	border: 1px solid #ccc;
+		 	border-radius: 3px;
+		 	background: #fafafa;
+		 	font-family: monospace;
+		 	font-size: .9em;
+		 	}
+		 
+		pre {
+		 	background: #555;
+		 	color: white;
+		 	border-radius: 5px;
+		 	padding: 10px;
+		 	}
+		 	
+		pre code {
+		 	border: 0;
+		 	background: #555;
+		 	font-size: .8em;
+		 	white-space: pre-wrap;
+		 	}
+
+		.footnote {
+			font-size: .8em;
+			position: relative;
+			color: #777;
+			padding-top: .4em;
+			}
+
+		.footnote:before {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 1px;
+			background: #777;
+			width: 20%;
+			}
+
+		hr {
+		 	margin-bottom: 40px;
+		 	}
+		 
+		.baked-by {
+		 	font-weight: bold;
+		 	}
+		 	
+    </style>
+  </head>
+  <body>
+    
+    <p class="project">The Pastry Box Project</p>
+
+    
+    <h1>Sunday, 1 April 2012</h1>
+    
+    <p class="baked-by">baked by John Allsopp</p>
+    
+    <div class="thought-content">
+       <p>That synching feeling.<p>How many screens do you routinely use to access email, messages, web content? Two? Three? More?</p><p>On what devices do you store your music, photos, movies?</p><p>On what devices do you view movies or photos? Listen to music?</p><p>As users (and most likely as developers and designers too) we are used to thinking of movies, photos, and so on as discrete things, located in a given place. </p><p>This in no small part comes from the pre networked days of computing, where we associate a document, an image, a song, and so on with an individual file on our computers hard disk.</p><p>But even that analogy is inaccurate. A file on a disk is not a single thing. It's not even a contiguous block of memory on a hard drive. Rather it's a whole lot of little fragments, scattered all over a drive, kept track of by the filesystem.</p><p>For us as humans, knowing this, let alone keeping track of the implementation details is a waste of time (even for most developers, we can safely think of a file as a discrete object).</p><p>So, the notion of a file as a thing, located in a given place, distinct from the identical information located elsewhere, even on the same drive is a useful metaphor. But a metaphor none the less.</p><p>And while metaphors are useful, they are also dangerous.</p><p>Because we are burdened by this metaphor, when it comes to managing our information across multiple devices, we imagine that this information is on each of these devices. Which it may be. But that's purely an implementation detail.</p><p>When I play a song on my laptop, does it really matter whether it's <em>really</em> stored on a server at Apple, or Google, or Amazon? Or on a NAS on my local network? Or on my phone?</p><p>When I open a file to be edited, do I care where it is located? </p><p>Those are implementation details, for developers to worry about.</p><p>Yet our mental models of what is happening when we play a song, or edit a document, or watch a youtube Video on AppleTV are encumbered, burdened with the metaphor of a file as a discrete thing, located somewhere specific. </p><p>Hence our obsession with "cloud computing" (as if we ever cared about "magnetic computing"). And our obsession with synching. Something which simply should be an implementation detail for developers to concern themselves with not something we as users should have to worry about, or even know about.</p><p>Which is all a roundabout way of saying that our mental models of computing are still essentially rooted in the 1940s and 1950s. </p><p>The device I hold in my hand, or which sits on my laptop, or my desk is still a store of data, connected to a whole lot of other such devices, some big, some small.</p><p>But that metaphor has outlived its usefulness. </p><p>Devices are portals to information, and it really shouldn't matter where that information "really" is. Whether it's cached locally to my device, or always refreshed from a server, shouldn't matter to our user, or to us as a user.</p><p>When I start editing a document, then open that document in another device, I should be seeing the same document. When I start watching a movie on AppleTV, then take my phone to bed to finish watching the movie, it should be the same movie.</p><p>Gmail gets closest to this model, indeed does it quite well. But I think it is a metal model of computing that we should strive for as we design and develop for any connected devices.  </p>
+    </div>
+  
+  </body>
+</html>

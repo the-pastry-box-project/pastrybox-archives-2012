@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en" class="">
+  <head>
+    <meta charset="utf-8">
+    <title>The Pastry Box Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="@alexduloz">
+    <style>
+    	* {
+    		margin: 0;
+    		padding: 0;
+    		-webkit-box-sizing: border-box;
+  			-moz-box-sizing: border-box;
+  			box-sizing: border-box;
+    		}
+    		
+		body {
+			width: 100%;
+			max-width: 800px;
+			padding: 40px 20px 0 20px;
+			margin: 0 auto;
+			padding-top: 40px;
+			font-size: 24px;
+			line-height: 1.4;
+			color: #333;
+			font-family: "Georgia", serif;
+			overflow-y: scroll;
+			}
+		
+		p, ul, ol, blockquote, figure, pre, iframe {
+			margin-bottom: 30px;
+			}
+		
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: bold;
+			font-family: "Helvetica", sans-serif;
+			margin-bottom: 0;
+			}
+		
+		a {
+			color: #333;
+			text-decoration: none;
+			border-bottom: 2px solid #333;
+			}
+		
+		ul {
+			list-style-type: disc;
+			}
+		
+		ul, ol {
+			padding-left: 25px;
+			}
+			
+		li {
+		 	margin-bottom: 5px;
+		 	}
+		 
+		.thought-content {
+			margin-bottom: 60px;
+			border-bottom: 1px solid #aaa;
+		 	}
+		 
+		.project {
+		 	font-size: 30px;
+		 	margin: 40px 0 60px 0;
+		 	}
+		 	
+		blockquote {
+		 	width: 75%;
+		 	margin-left: auto;
+		 	margin-right: auto;
+		 	color: #777;
+		 	border-left: double 4px #ccc;
+		 	font-style: italic;
+		 	padding-left: 20px;
+		 	font-size: .9em;
+		 	}
+		 
+		figcaption {
+		 	text-align: right;
+		 	}
+		 
+		code {
+		 	border: 1px solid #ccc;
+		 	border-radius: 3px;
+		 	background: #fafafa;
+		 	font-family: monospace;
+		 	font-size: .9em;
+		 	}
+		 
+		pre {
+		 	background: #555;
+		 	color: white;
+		 	border-radius: 5px;
+		 	padding: 10px;
+		 	}
+		 	
+		pre code {
+		 	border: 0;
+		 	background: #555;
+		 	font-size: .8em;
+		 	white-space: pre-wrap;
+		 	}
+
+		.footnote {
+			font-size: .8em;
+			position: relative;
+			color: #777;
+			padding-top: .4em;
+			}
+
+		.footnote:before {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 1px;
+			background: #777;
+			width: 20%;
+			}
+
+		hr {
+		 	margin-bottom: 40px;
+		 	}
+		 
+		.baked-by {
+		 	font-weight: bold;
+		 	}
+		 	
+    </style>
+  </head>
+  <body>
+    
+    <p class="project">The Pastry Box Project</p>
+
+    
+    <h1>Tuesday, 11 September 2012</h1>
+    
+    <p class="baked-by">baked by Rachel Andrew</p>
+    
+    <div class="thought-content">
+       <p>Something that puzzles us in technical support for <a href="http://grabaperch.com">Perch</a>: The number of web designers and capable front-end developers who are unable to diagnose something as simple as a 404, file not found. Or have little understanding of what any server-side solution might be doing. We read some very strange theories as to what our users believe is happening when they encounter a problem due to this lack of understanding of what happens prior to html being delivered to the browser.</p><p>Perhaps those of us who began working on the web in the early days have an advantage here. When I wanted to start doing server-side development, I bought a tatty old Compaq desktop from a chap who sold old technology that businesses wanted to recycle. I then had to work out how to install Linux, compile Apache and configure Perl to work with the web server. This took days. This was before I even started to learn Perl. However, this somewhat torturous process taught me how web pages are served. I read a seemingly endless string of error messages; I learned how to search the web and Usenet for answers; I learned how to formulate a post asking for help in a way that wouldn't get me flamed and might get me an answer.</p><p>In 2012 many people who are working with server-side development seem barely aware that is what they are doing. One-click installs of WordPress and similar on their hosting causes the process of getting set up to be hidden. They work, quite terrifyingly, directly on their live server. Even if you want to go one step beyond that and run a local development environment that is now incredibly trivial to set up due to packages such as XAMPP and Mamp. We can easily find ourselves protected from the technology that we are relying on to serve our sites.</p><p>All this ease and convenience is great. I don't think that everyone building a website should be forced to compile Apache from scratch. However I do believe that if you are developing for the web, you need to have enough understanding to be able to take a holistic view of the entire process. If you do not understand how a script serves up your HTML, then it will appear baffling when something goes wrong. It will be very hard for you to start to diagnose problems, even enough to be able to raise a support request that will get you help.</p><p>If you are working with any kind of CMS, blogging software or other server-side solution and are treating it as a black box, you will be amazed at how a little bit of time invested in understanding how this stuff works can save you hours in the long run.</p>
+    </div>
+  
+  </body>
+</html>

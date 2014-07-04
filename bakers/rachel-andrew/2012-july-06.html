@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en" class="">
+  <head>
+    <meta charset="utf-8">
+    <title>The Pastry Box Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="@alexduloz">
+    <style>
+    	* {
+    		margin: 0;
+    		padding: 0;
+    		-webkit-box-sizing: border-box;
+  			-moz-box-sizing: border-box;
+  			box-sizing: border-box;
+    		}
+    		
+		body {
+			width: 100%;
+			max-width: 800px;
+			padding: 40px 20px 0 20px;
+			margin: 0 auto;
+			padding-top: 40px;
+			font-size: 24px;
+			line-height: 1.4;
+			color: #333;
+			font-family: "Georgia", serif;
+			overflow-y: scroll;
+			}
+		
+		p, ul, ol, blockquote, figure, pre, iframe {
+			margin-bottom: 30px;
+			}
+		
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: bold;
+			font-family: "Helvetica", sans-serif;
+			margin-bottom: 0;
+			}
+		
+		a {
+			color: #333;
+			text-decoration: none;
+			border-bottom: 2px solid #333;
+			}
+		
+		ul {
+			list-style-type: disc;
+			}
+		
+		ul, ol {
+			padding-left: 25px;
+			}
+			
+		li {
+		 	margin-bottom: 5px;
+		 	}
+		 
+		.thought-content {
+			margin-bottom: 60px;
+			border-bottom: 1px solid #aaa;
+		 	}
+		 
+		.project {
+		 	font-size: 30px;
+		 	margin: 40px 0 60px 0;
+		 	}
+		 	
+		blockquote {
+		 	width: 75%;
+		 	margin-left: auto;
+		 	margin-right: auto;
+		 	color: #777;
+		 	border-left: double 4px #ccc;
+		 	font-style: italic;
+		 	padding-left: 20px;
+		 	font-size: .9em;
+		 	}
+		 
+		figcaption {
+		 	text-align: right;
+		 	}
+		 
+		code {
+		 	border: 1px solid #ccc;
+		 	border-radius: 3px;
+		 	background: #fafafa;
+		 	font-family: monospace;
+		 	font-size: .9em;
+		 	}
+		 
+		pre {
+		 	background: #555;
+		 	color: white;
+		 	border-radius: 5px;
+		 	padding: 10px;
+		 	}
+		 	
+		pre code {
+		 	border: 0;
+		 	background: #555;
+		 	font-size: .8em;
+		 	white-space: pre-wrap;
+		 	}
+
+		.footnote {
+			font-size: .8em;
+			position: relative;
+			color: #777;
+			padding-top: .4em;
+			}
+
+		.footnote:before {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 1px;
+			background: #777;
+			width: 20%;
+			}
+
+		hr {
+		 	margin-bottom: 40px;
+		 	}
+		 
+		.baked-by {
+		 	font-weight: bold;
+		 	}
+		 	
+    </style>
+  </head>
+  <body>
+    
+    <p class="project">The Pastry Box Project</p>
+
+    
+    <h1>Friday, 6 July 2012</h1>
+    
+    <p class="baked-by">baked by Rachel Andrew</p>
+    
+    <div class="thought-content">
+       <blockquote><p class="bold">How did I get here?</p><p>We have directed you here because your browser does not support accepted web standards. Or you may have followed a link to this page in order to learn more about upgrading your browser.</p><p class="bold margin-top">What &#8220;web standards?&#8221;</p><p>The ones created by the World Wide Web Consortium – the people who invented the Web itself. The W3C created these standards so the Web would work better for everyone. New browsers, in general, support these standards; old browsers, in general, don&#8217;t.</p><p class="bold margin-top">What can I do?</p><p>Your choice of software may be out of your hands. However, if you do have control over what software you are using you should consider upgrading your browser. Doing so will improve your web experience, enabling you to use and view sites as their creators intended.</p></blockquote><p>The above text is from the Web Standards Project &#8220;Browser Upgrade Campaign&#8221; launched in early 2001. Web designers and developers were frustrated that people were not upgrading away from the buggy Netscape 4. To fix this problem, and encouraged by WaSP, designers started putting a message on their sites exhorting people to upgrade or even redirecting them to a page blocking access to the site. A <a href="https://www.google.co.uk/search?q=%22The+ones+created+by+the+World+Wide+Web+Consortium+%E2%80%94+the+people+who+invented+the+Web+itself.%22&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a">search on Google for some of the above text</a> finds many of these upgrade pages still in existence.</p><p>As time has passed most of us have realised that locking people out of sites because we don&#8217;t like their browser is not appropriate. However, ever since 2001, our frustrations repeat. <a href="http://www.ie6countdown.com/">Internet Explorer 6</a> becomes the enemy. An online retailer runs a PR stunt announcing that they would <a href="http://www.netmagazine.com/news/retailer-announces-ie7-tax-122022">apply a tax to anyone using their store with IE7</a> due to the cost of supporting these older browsers. <a href="http://37signals.com/svn/posts/3097-developing-for-old-browsers-is-almost-a-thing-of-the-past">37 Signals announce</a> that people using Internet Explorer in the latest versions of their product will require IE9 or greater.</p><p>The better our browsers become the more this frustration looks like the whining of people who forget that not everyone is on a shiny Mac, on a fast net connection with easy access to the latest browsers; who forget that many regular folk do not even know what a browser <em>is</em>. If you are a professional web developer then <strong>your job</strong> is to deal with legacy browsers, operating systems and devices. That was the case in 2001 and it is still the case now. The faster the pace of new additions to HTML and CSS, then the quicker perfectly capable browsers look out of date due to their lack of support. However as anyone who developed for Netscape 4 will tell you, lack of support is very different from buggy support. We have never had it so good.</p><p>Of course supporting and testing in older browsers adds time and effort to our projects. Doing a professional job does take time, effort and thought. I will continue to be led by the real browser stats I check before starting work on a project. The decision as to which browsers I support and the level of support I give them is not an arbitrary one that I make, it is led by data, and is different from project to project.</p><p>If you believe that your job is to show off how clever you are with the latest technologies then you will always be frustrated by older browsers. However the web I care about is the web that is for everyone, that enables people to participate, learn and communicate with each other across many different divides. My job is developing for that web, and sometimes that means I have to make technology choices that aren&#8217;t quite as fun or interesting to me. That&#8217;s a shame, but ultimately I&#8217;m not developing these sites for me. By keeping my user in mind I know that the work I do to give them an appropriate level of support is worthwhile.</p>
+    </div>
+  
+  </body>
+</html>

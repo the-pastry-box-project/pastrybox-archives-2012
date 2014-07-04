@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en" class="">
+  <head>
+    <meta charset="utf-8">
+    <title>The Pastry Box Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="@alexduloz">
+    <style>
+    	* {
+    		margin: 0;
+    		padding: 0;
+    		-webkit-box-sizing: border-box;
+  			-moz-box-sizing: border-box;
+  			box-sizing: border-box;
+    		}
+    		
+		body {
+			width: 100%;
+			max-width: 800px;
+			padding: 40px 20px 0 20px;
+			margin: 0 auto;
+			padding-top: 40px;
+			font-size: 24px;
+			line-height: 1.4;
+			color: #333;
+			font-family: "Georgia", serif;
+			overflow-y: scroll;
+			}
+		
+		p, ul, ol, blockquote, figure, pre, iframe {
+			margin-bottom: 30px;
+			}
+		
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: bold;
+			font-family: "Helvetica", sans-serif;
+			margin-bottom: 0;
+			}
+		
+		a {
+			color: #333;
+			text-decoration: none;
+			border-bottom: 2px solid #333;
+			}
+		
+		ul {
+			list-style-type: disc;
+			}
+		
+		ul, ol {
+			padding-left: 25px;
+			}
+			
+		li {
+		 	margin-bottom: 5px;
+		 	}
+		 
+		.thought-content {
+			margin-bottom: 60px;
+			border-bottom: 1px solid #aaa;
+		 	}
+		 
+		.project {
+		 	font-size: 30px;
+		 	margin: 40px 0 60px 0;
+		 	}
+		 	
+		blockquote {
+		 	width: 75%;
+		 	margin-left: auto;
+		 	margin-right: auto;
+		 	color: #777;
+		 	border-left: double 4px #ccc;
+		 	font-style: italic;
+		 	padding-left: 20px;
+		 	font-size: .9em;
+		 	}
+		 
+		figcaption {
+		 	text-align: right;
+		 	}
+		 
+		code {
+		 	border: 1px solid #ccc;
+		 	border-radius: 3px;
+		 	background: #fafafa;
+		 	font-family: monospace;
+		 	font-size: .9em;
+		 	}
+		 
+		pre {
+		 	background: #555;
+		 	color: white;
+		 	border-radius: 5px;
+		 	padding: 10px;
+		 	}
+		 	
+		pre code {
+		 	border: 0;
+		 	background: #555;
+		 	font-size: .8em;
+		 	white-space: pre-wrap;
+		 	}
+
+		.footnote {
+			font-size: .8em;
+			position: relative;
+			color: #777;
+			padding-top: .4em;
+			}
+
+		.footnote:before {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 1px;
+			background: #777;
+			width: 20%;
+			}
+
+		hr {
+		 	margin-bottom: 40px;
+		 	}
+		 
+		.baked-by {
+		 	font-weight: bold;
+		 	}
+		 	
+    </style>
+  </head>
+  <body>
+    
+    <p class="project">The Pastry Box Project</p>
+
+    
+    <h1>Monday, 27 February 2012</h1>
+    
+    <p class="baked-by">baked by Stuart Langridge</p>
+    
+    <div class="thought-content">
+       <p>There's a lot to think about when you're building something on the web. Is it accessible? How do I handle translations of the text? Is the design OK on a 320px-wide screen? On a 2320px-wide screen? Does it work in IE8? In Android 4.0? In Opera Mini? Have I minimized the number of HTTP requests my page requires? Is my JavaScript minified? Are my images responsive? Is Google Analytics hooked up properly? AdSense? Am I handling Unicode text properly? Avoiding CSRF? XSS? Have I encoded my videos correctly? Crushed my pngs? Made a print stylesheet?</p><p>We've come a long way since:<pre>
+<code>&lt;HEADER&gt;
+&lt;TITLE&gt;The World Wide Web project&lt;/TITLE&gt;
+&lt;NEXTID N=&quot;55&quot;&gt;
+&lt;/HEADER&gt;
+&lt;BODY&gt;
+&lt;H1&gt;World Wide Web&lt;/H1&gt;The WorldWideWeb (W3) is a wide-area&lt;A
+NAME=0 HREF=&quot;WhatIs.html&quot;&gt;
+hypermedia&lt;/A&gt; information retrieval
+initiative aiming to give universal
+access to a large universe of documents.</code>
+</pre><p>Look at <a href="http://html5boilerplate.com/">http://html5boilerplate.com/</a>—a base level page which helps you to cover some (nowhere near all) of the above list of things to care about (and the rest of the things you need to care about too, which are the other 90% of the list). A year in development, 900 sets of changes and evolutions from the initial version, seven separate files. That's not over-engineering; that's what you need to know to build things these days.</p><p>The important point is: one of the skills in our game is knowing what you don't need to do right now but still leaving the door open for you to do it later. If you become the next Facebook then you will have to care about all these things; initially you may not. You don't have to build them all on day one: that <em>is</em> over-engineering. But you, designer, developer, translator, evangelist, web person, do have to understand what they all mean. And you do have to be able to layer them on later without having to tear everything up and start again. Feel guilty that you're not addressing all this stuff in the first release if necessary, but you should feel a lot guiltier if you didn't think of some of it.</p>
+    </div>
+  
+  </body>
+</html>

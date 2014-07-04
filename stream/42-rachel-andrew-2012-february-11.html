@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en" class="">
+  <head>
+    <meta charset="utf-8">
+    <title>The Pastry Box Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="@alexduloz">
+    <style>
+    	* {
+    		margin: 0;
+    		padding: 0;
+    		-webkit-box-sizing: border-box;
+  			-moz-box-sizing: border-box;
+  			box-sizing: border-box;
+    		}
+    		
+		body {
+			width: 100%;
+			max-width: 800px;
+			padding: 40px 20px 0 20px;
+			margin: 0 auto;
+			padding-top: 40px;
+			font-size: 24px;
+			line-height: 1.4;
+			color: #333;
+			font-family: "Georgia", serif;
+			overflow-y: scroll;
+			}
+		
+		p, ul, ol, blockquote, figure, pre, iframe {
+			margin-bottom: 30px;
+			}
+		
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: bold;
+			font-family: "Helvetica", sans-serif;
+			margin-bottom: 0;
+			}
+		
+		a {
+			color: #333;
+			text-decoration: none;
+			border-bottom: 2px solid #333;
+			}
+		
+		ul {
+			list-style-type: disc;
+			}
+		
+		ul, ol {
+			padding-left: 25px;
+			}
+			
+		li {
+		 	margin-bottom: 5px;
+		 	}
+		 
+		.thought-content {
+			margin-bottom: 60px;
+			border-bottom: 1px solid #aaa;
+		 	}
+		 
+		.project {
+		 	font-size: 30px;
+		 	margin: 40px 0 60px 0;
+		 	}
+		 	
+		blockquote {
+		 	width: 75%;
+		 	margin-left: auto;
+		 	margin-right: auto;
+		 	color: #777;
+		 	border-left: double 4px #ccc;
+		 	font-style: italic;
+		 	padding-left: 20px;
+		 	font-size: .9em;
+		 	}
+		 
+		figcaption {
+		 	text-align: right;
+		 	}
+		 
+		code {
+		 	border: 1px solid #ccc;
+		 	border-radius: 3px;
+		 	background: #fafafa;
+		 	font-family: monospace;
+		 	font-size: .9em;
+		 	}
+		 
+		pre {
+		 	background: #555;
+		 	color: white;
+		 	border-radius: 5px;
+		 	padding: 10px;
+		 	}
+		 	
+		pre code {
+		 	border: 0;
+		 	background: #555;
+		 	font-size: .8em;
+		 	white-space: pre-wrap;
+		 	}
+
+		.footnote {
+			font-size: .8em;
+			position: relative;
+			color: #777;
+			padding-top: .4em;
+			}
+
+		.footnote:before {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 1px;
+			background: #777;
+			width: 20%;
+			}
+
+		hr {
+		 	margin-bottom: 40px;
+		 	}
+		 
+		.baked-by {
+		 	font-weight: bold;
+		 	}
+		 	
+    </style>
+  </head>
+  <body>
+    
+    <p class="project">The Pastry Box Project</p>
+
+    
+    <h1>Saturday, 11 February 2012</h1>
+    
+    <p class="baked-by">baked by Rachel Andrew</p>
+    
+    <div class="thought-content">
+       <p>Almost 10 years ago I wrote a blog post entitled <a href="http://www.edgeofmyseat.com/blog/all/it-doesnt-have-to-look-the-same">It doesn't have to look the same</a>. In which I said:</p><blockquote><p>Different is not wrong, this is the web, a dynamic medium where we have no control over our user nor should we want to have. By building sites that separate style from content we are free to display the same pages in as many ways as our imagination will allow. We can have bells and whistles for the new browsers, we can have attractive and readable designs for the version 4 browsers, we can display the content legibly for older browsers, devices that do not support CSS.</p></blockquote><p>I was writing about Version 4 browsers - the versions of Netscape and Internet Explorer released in 1997/98. In particular I was speaking about <a href="http://en.wikipedia.org/wiki/Netscape_Navigator">Netscape 4</a>. A browser with such a crazy implementation of CSS that absolutely positioned elements would lose their position on resize, form elements would become unusable with CSS applied, and in which CSS didn't work at all if JavaScript was turned off. I was explaining to my clients why serving this browser a simpler layout was a good thing, as it was technically incapable of displaying a modern CSS layout, and for the most part they agreed. I was frustrated when I wrote that post because the excuse many people were using for ignoring web standards was, "but it won't look the same in Netscape 4."</p><p>It is now 2012, and still I hear the same argument for not using CSS3, for not taking advantage of all that has been developed over the past ten years. Yet I think there might be a light at the end of the tunnel. A way to squash the idea that websites need to look the same to everyone once and for all. Old browsers will always be with us, there will always be people who don't upgrade, won't upgrade or have computers so old they can't upgrade. However, the increase in "responsive design", websites that adjust themselves according to the capabilities of the device they are viewed in, means that the average person will become used to the fact that websites don't look the same on all devices. It will become obvious to them that their phone has different capabilities to their desktop at work, and that the site responds to that. It's then far easier to explain that when they view the site on that ancient PC in the library, that runs IE6, and it looks plainer than on their top of the range laptop - that's just the site once again responding to what it is being viewed in.</p><p>Even our most non-technical of clients is likely to have experience of seeing a website on a phone or tablet, and we can use that to explain a one web approach to development. An approach that serves a good experience to everyone, no matter what the capabilities of their browser or device. Yet doesn't attempt to provide an identical experience, as that simply isn't possible.</p>
+    </div>
+  
+  </body>
+</html>

@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en" class="">
+  <head>
+    <meta charset="utf-8">
+    <title>The Pastry Box Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="@alexduloz">
+    <style>
+    	* {
+    		margin: 0;
+    		padding: 0;
+    		-webkit-box-sizing: border-box;
+  			-moz-box-sizing: border-box;
+  			box-sizing: border-box;
+    		}
+    		
+		body {
+			width: 100%;
+			max-width: 800px;
+			padding: 40px 20px 0 20px;
+			margin: 0 auto;
+			padding-top: 40px;
+			font-size: 24px;
+			line-height: 1.4;
+			color: #333;
+			font-family: "Georgia", serif;
+			overflow-y: scroll;
+			}
+		
+		p, ul, ol, blockquote, figure, pre, iframe {
+			margin-bottom: 30px;
+			}
+		
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: bold;
+			font-family: "Helvetica", sans-serif;
+			margin-bottom: 0;
+			}
+		
+		a {
+			color: #333;
+			text-decoration: none;
+			border-bottom: 2px solid #333;
+			}
+		
+		ul {
+			list-style-type: disc;
+			}
+		
+		ul, ol {
+			padding-left: 25px;
+			}
+			
+		li {
+		 	margin-bottom: 5px;
+		 	}
+		 
+		.thought-content {
+			margin-bottom: 60px;
+			border-bottom: 1px solid #aaa;
+		 	}
+		 
+		.project {
+		 	font-size: 30px;
+		 	margin: 40px 0 60px 0;
+		 	}
+		 	
+		blockquote {
+		 	width: 75%;
+		 	margin-left: auto;
+		 	margin-right: auto;
+		 	color: #777;
+		 	border-left: double 4px #ccc;
+		 	font-style: italic;
+		 	padding-left: 20px;
+		 	font-size: .9em;
+		 	}
+		 
+		figcaption {
+		 	text-align: right;
+		 	}
+		 
+		code {
+		 	border: 1px solid #ccc;
+		 	border-radius: 3px;
+		 	background: #fafafa;
+		 	font-family: monospace;
+		 	font-size: .9em;
+		 	}
+		 
+		pre {
+		 	background: #555;
+		 	color: white;
+		 	border-radius: 5px;
+		 	padding: 10px;
+		 	}
+		 	
+		pre code {
+		 	border: 0;
+		 	background: #555;
+		 	font-size: .8em;
+		 	white-space: pre-wrap;
+		 	}
+
+		.footnote {
+			font-size: .8em;
+			position: relative;
+			color: #777;
+			padding-top: .4em;
+			}
+
+		.footnote:before {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 1px;
+			background: #777;
+			width: 20%;
+			}
+
+		hr {
+		 	margin-bottom: 40px;
+		 	}
+		 
+		.baked-by {
+		 	font-weight: bold;
+		 	}
+		 	
+    </style>
+  </head>
+  <body>
+    
+    <p class="project">The Pastry Box Project</p>
+
+    
+    <h1>Tuesday, 19 June 2012</h1>
+    
+    <p class="baked-by">baked by Ben Ward</p>
+    
+    <div class="thought-content">
+       <p>I&#8217;ve been thinking about the intersection of ownership, responsibility, and infrastructure in the development of businesses on the web. Users and potential businesses are involved in a difficult balancing act of ownership, obligation, and expectation. Every new service on the web seems to rub up against this at some point, regardless of the funding model. What&#8217;s more, I think that if the lessons of this generation of start-ups are clearly understood, start-ups and applications should be able to take a more fearless footing as they grow.</p><p>So, here&#8217;s the basis of most web applications: You store data, which other people own. Other people create things and combine them with your service, either at point of creation or distribution. What <em>you</em> own is infrastructure; the machines, the principal applications that connect it all together, the interfaces through which people interact with their creations on your service. This infrastructure belong to you. At a basic level you have an obligation to your user to provide them with access to what&#8217;s theirs, but it&#8217;s all on infrastructure, which you own.</p><p>Now, although the data does not belong to you, the operations that aggregate that data, through it being entrusted to your network en mass, do. This is your product. You are entitled to profit from features built on these aggregations, insights and infrastructure.</p><p>Consider Rdio, MOG, or Spotify, and consider Last.FM. All are music companies, and all stream music. The first three—at least initially—have core businesses built around streaming alone and have developed infrastructure to that end. But, the product users pay for—the music—belongs to a third party. This makes them vulnerable, since changes from their supplier could cause a sudden imbalance to the entire business.</p><p>Last.FM—although also having a streaming component—has a product of its own, in the form of the aggregated, processed, and presented Audioscrobbler listening data of its users, that it serves back to them as a service. The user owns their listening data, the music labels own the music files, and Last.FM owns the entire infrastructure of data analysis, aggregation and presentation (and the iterative uses, such as music recommendations). There is a balance between the service and the user. If the streaming music licenses were pulled tomorrow, there remains a business in the data the user owns and the services Last.FM has built on it.</p><p>(Of course, online music is far from the simplest example, since there are so many licensing factors and contracts muddled into it. Rdio and Spotify surely have contractual assurances from labels for some period of time, and are working hard to build out unique aspects of their services as they grow—reviews, libraries, web playback APIs, and nested applications, for example—so please don&#8217;t mistake this example as writing them off.)</p><p>A well-balanced application doesn&#8217;t have to lock data away, and has an understanding with their users about what they give and what they get. In the applications we build, in the businesses we try to found on the web, this balance—or understanding thereof—is what we must strive for from the outset.</p><p>But what of APIs? APIs are interesting things. Beyond the raw basics—providing high fidelity data to your users—they enable a specific group of users to grow usage and personal investment in your service, and even define whole new usage patterns. With time, the influence of third-party designs can become de facto, and the core service may be shaped by them.</p><p>However, the idea that your service is obligated to third parties is muddied. It&#8217;s a relationship, because although ideas developed in the wild can prove essential, they could not succeed in isolation without your infrastructure, collective user-base, and even the adoption of those popular ideas themselves into features that other users come to understand. Everyone needs to understand that; you, as the provider of an API, and any user who chooses to build on top of your infrastructure.</p><p>The value of a business on the web comes from broad infrastructure. It&#8217;s the things you build that allow people to do more than what they might do in isolation. You provide and support the platforms on which people build new ways to perceive their creations and others. If successful, your business supports your work and yourself because as a whole—you, your users, your backers and advertisers, those who build around your infrastructure—you create a healthy, balanced relationship.</p>
+    </div>
+  
+  </body>
+</html>

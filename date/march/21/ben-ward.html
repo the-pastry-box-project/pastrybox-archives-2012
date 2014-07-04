@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en" class="">
+  <head>
+    <meta charset="utf-8">
+    <title>The Pastry Box Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="@alexduloz">
+    <style>
+    	* {
+    		margin: 0;
+    		padding: 0;
+    		-webkit-box-sizing: border-box;
+  			-moz-box-sizing: border-box;
+  			box-sizing: border-box;
+    		}
+    		
+		body {
+			width: 100%;
+			max-width: 800px;
+			padding: 40px 20px 0 20px;
+			margin: 0 auto;
+			padding-top: 40px;
+			font-size: 24px;
+			line-height: 1.4;
+			color: #333;
+			font-family: "Georgia", serif;
+			overflow-y: scroll;
+			}
+		
+		p, ul, ol, blockquote, figure, pre, iframe {
+			margin-bottom: 30px;
+			}
+		
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: bold;
+			font-family: "Helvetica", sans-serif;
+			margin-bottom: 0;
+			}
+		
+		a {
+			color: #333;
+			text-decoration: none;
+			border-bottom: 2px solid #333;
+			}
+		
+		ul {
+			list-style-type: disc;
+			}
+		
+		ul, ol {
+			padding-left: 25px;
+			}
+			
+		li {
+		 	margin-bottom: 5px;
+		 	}
+		 
+		.thought-content {
+			margin-bottom: 60px;
+			border-bottom: 1px solid #aaa;
+		 	}
+		 
+		.project {
+		 	font-size: 30px;
+		 	margin: 40px 0 60px 0;
+		 	}
+		 	
+		blockquote {
+		 	width: 75%;
+		 	margin-left: auto;
+		 	margin-right: auto;
+		 	color: #777;
+		 	border-left: double 4px #ccc;
+		 	font-style: italic;
+		 	padding-left: 20px;
+		 	font-size: .9em;
+		 	}
+		 
+		figcaption {
+		 	text-align: right;
+		 	}
+		 
+		code {
+		 	border: 1px solid #ccc;
+		 	border-radius: 3px;
+		 	background: #fafafa;
+		 	font-family: monospace;
+		 	font-size: .9em;
+		 	}
+		 
+		pre {
+		 	background: #555;
+		 	color: white;
+		 	border-radius: 5px;
+		 	padding: 10px;
+		 	}
+		 	
+		pre code {
+		 	border: 0;
+		 	background: #555;
+		 	font-size: .8em;
+		 	white-space: pre-wrap;
+		 	}
+
+		.footnote {
+			font-size: .8em;
+			position: relative;
+			color: #777;
+			padding-top: .4em;
+			}
+
+		.footnote:before {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 1px;
+			background: #777;
+			width: 20%;
+			}
+
+		hr {
+		 	margin-bottom: 40px;
+		 	}
+		 
+		.baked-by {
+		 	font-weight: bold;
+		 	}
+		 	
+    </style>
+  </head>
+  <body>
+    
+    <p class="project">The Pastry Box Project</p>
+
+    
+    <h1>Wednesday, 21 March 2012</h1>
+    
+    <p class="baked-by">baked by Ben Ward</p>
+    
+    <div class="thought-content">
+       <p>This month I&#8217;ve been working with my personal site. The last time I wrote on it was in 2010, which is a little odd for someone who enjoys writing as much as I do (I do also write on Twitter and Tumblr, though.) Part of the problem has always been a failure to find time for building out a site that meets ruthless personal expectations. Expectations that triggered various drastic measures at various points to try and expedite its completion. (One time, I removed all the CSS and left it bare, for example. It was supposed to motivate me to build the real thing. Eventually I just hacked on some more styles to make it legible and it remained that way for two years.)</p><p>On this occasion I was exported every post from a database into standalone text files, and that has led me to stumble upon and re-read some, including my very first blog post, from July of 2004. In the very first paragraphs I wrote:</p><blockquote><p>It was, I suppose, inevitable.</p><p>I&#8217;ve spent many, many months mumbling on about the incredible CMS I&#8217;m going to write, and as per usual there is nothing to show for it. There is, again inevitably, the need to have a website in the time between &#8220;Now&#8221; and &#8220;Then&#8221;.</p></blockquote><p>Eight years on, “then” is still a long way off. My inaugural post then concludes: </p><blockquote><p>The plan with this blog is to write in it on occasion […] and at some point develop my own super-flash skin/theme/pretty whatsit for these pages, in such as way as not to leave me hating Web Development for the rest of my life. What with doing it for a living and all that.</p></blockquote><p>Eight years on, I am in love with Web Development as my vocation more than I ever have been, and yet ‘finishing’ this longest of long term personal projects is never on my mind. When I work on it, I fall into the exact same rabbit holes as I did at the start: Indulging in distracting, glinting fragments of technology or design, and eventually shipping a site unfinished in a fit of exasperation.</p><p>What I&#8217;ve come to realise in this time is the value of a personal project that is never done. This site on my domain represents me personally and professionally. The social network leaseholds that host my more regular online activity will come and go and change, but this site is the canonical digital reference for ‘me’. Like the real me, its wellbeing is sometimes a little neglected, nor does it frantically keep up with design or technology trends. Also, it could stand to have some of its resources minified.</p><p>An eerie metaphor is not what makes my site valuable to me. The value is that since it&#8217;s never finished, I can change it at will. I can become interested—as I have—in hosting content via a git repository rather than a database, and I can tear everything apart to make that happen. I can pour hours into perfecting the export script that ensures every piece of important metadata is preserved, de-normalized, and presented better in the new site. The <em>visual</em> design is barer than it ever has been.</p><p>We have a limited capacity for the minutiae of finishing projects. It&#8217;s exhausting, and once it&#8217;s done there&#8217;s stability, and finality. When you ship it, you&#8217;re drawing a line and moving on to the next thing. If you want to scratch a different itch, you need to build a different project.</p><p>I&#8217;ve come to understand that this project I can never truly finish comes with creative freedom on a whim. Projects like this are rare in that they demand nothing, yet give you everything. You owe them to nobody but yourself, and I think I&#8217;ve finally learned to embrace that.</p>
+    </div>
+  
+  </body>
+</html>

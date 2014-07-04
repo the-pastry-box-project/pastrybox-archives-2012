@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en" class="">
+  <head>
+    <meta charset="utf-8">
+    <title>The Pastry Box Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="@alexduloz">
+    <style>
+    	* {
+    		margin: 0;
+    		padding: 0;
+    		-webkit-box-sizing: border-box;
+  			-moz-box-sizing: border-box;
+  			box-sizing: border-box;
+    		}
+    		
+		body {
+			width: 100%;
+			max-width: 800px;
+			padding: 40px 20px 0 20px;
+			margin: 0 auto;
+			padding-top: 40px;
+			font-size: 24px;
+			line-height: 1.4;
+			color: #333;
+			font-family: "Georgia", serif;
+			overflow-y: scroll;
+			}
+		
+		p, ul, ol, blockquote, figure, pre, iframe {
+			margin-bottom: 30px;
+			}
+		
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: bold;
+			font-family: "Helvetica", sans-serif;
+			margin-bottom: 0;
+			}
+		
+		a {
+			color: #333;
+			text-decoration: none;
+			border-bottom: 2px solid #333;
+			}
+		
+		ul {
+			list-style-type: disc;
+			}
+		
+		ul, ol {
+			padding-left: 25px;
+			}
+			
+		li {
+		 	margin-bottom: 5px;
+		 	}
+		 
+		.thought-content {
+			margin-bottom: 60px;
+			border-bottom: 1px solid #aaa;
+		 	}
+		 
+		.project {
+		 	font-size: 30px;
+		 	margin: 40px 0 60px 0;
+		 	}
+		 	
+		blockquote {
+		 	width: 75%;
+		 	margin-left: auto;
+		 	margin-right: auto;
+		 	color: #777;
+		 	border-left: double 4px #ccc;
+		 	font-style: italic;
+		 	padding-left: 20px;
+		 	font-size: .9em;
+		 	}
+		 
+		figcaption {
+		 	text-align: right;
+		 	}
+		 
+		code {
+		 	border: 1px solid #ccc;
+		 	border-radius: 3px;
+		 	background: #fafafa;
+		 	font-family: monospace;
+		 	font-size: .9em;
+		 	}
+		 
+		pre {
+		 	background: #555;
+		 	color: white;
+		 	border-radius: 5px;
+		 	padding: 10px;
+		 	}
+		 	
+		pre code {
+		 	border: 0;
+		 	background: #555;
+		 	font-size: .8em;
+		 	white-space: pre-wrap;
+		 	}
+
+		.footnote {
+			font-size: .8em;
+			position: relative;
+			color: #777;
+			padding-top: .4em;
+			}
+
+		.footnote:before {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 1px;
+			background: #777;
+			width: 20%;
+			}
+
+		hr {
+		 	margin-bottom: 40px;
+		 	}
+		 
+		.baked-by {
+		 	font-weight: bold;
+		 	}
+		 	
+    </style>
+  </head>
+  <body>
+    
+    <p class="project">The Pastry Box Project</p>
+
+    
+    <h1>Monday, 6 February 2012</h1>
+    
+    <p class="baked-by">baked by John Allsopp</p>
+    
+    <div class="thought-content">
+       <p>In my early to mid teens, like many in my experience in the technology world, I voraciously read the classics of 20th C science fiction, in particular, giants like Asimov and Clarke. It's decades since I've read them, but many of the stories and ideas stay with me.</p><p>One expression you've almost certainly read or heard is Asimov's 3rd law of technology (Asimov rather liked laws, his laws of robotics having long since passed into mainstream consciousness).</p><p>"Any sufficiently advanced technology is indistinguishable from magic": <a href="http://en.wikipedia.org/wiki/Clarke's_three_laws">http://en.wikipedia.org/wiki/Clarke's_three_laws</a>.</p><p>When I was younger, I thought this was a very astute observation about, a description, indeed a definition of technology.</p><p>But many years later, it occurred to me it's more than that. It's a <strong>challenge</strong> to technologists. Make your technology magical. Make it disappear, make it just work.</p><p>A recent, in many ways mundane example comes to mind.</p><p>Some months ago we got a new iMac for home. For the first time in years, I set it up from scratch, rather than transferring an account over from an older computer.</p><p>I created an account, gave it a password, and when the setup process completed, it connected to the web. Over our secure wireless network.</p><p>Most people would likely give this no extra thought. But I was perplexed. How could it possibly connect to our password protected wireless network? Choosing a network and connecting to it was not part of the setup process.</p><p>Then I realized, the password I gave the new account was the same as that for our wireless network. Whoever designed the setup process decided to try the user password for the networks it could see. If none of these shared the same password, there's no additional impact on the user, they simply need to connect to the network with a password, as they would otherwise. But. If (as I suspect is common) the user's password and network password are the same, the computer magically connects to the network, and so the web.</p><p>We are definitely not talking quantum levitation here, but this is magical technology.</p><p>And, there are opportunities everywhere to weave a little magic in what you build.</p><p>Something simple that comes to mind is auto-filling form fields based on the user's location using the geolocation API, but there are ways to make them almost any interaction less frustrating, more intuitive, more magical.</p><p>Perhaps your user will stop and wonder "how did they do that?". But even better, they may not notice at all. A vanishing act, the greatest magic trick of them all.</p>
+    </div>
+  
+  </body>
+</html>

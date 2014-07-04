@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en" class="">
+  <head>
+    <meta charset="utf-8">
+    <title>The Pastry Box Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="@alexduloz">
+    <style>
+    	* {
+    		margin: 0;
+    		padding: 0;
+    		-webkit-box-sizing: border-box;
+  			-moz-box-sizing: border-box;
+  			box-sizing: border-box;
+    		}
+    		
+		body {
+			width: 100%;
+			max-width: 800px;
+			padding: 40px 20px 0 20px;
+			margin: 0 auto;
+			padding-top: 40px;
+			font-size: 24px;
+			line-height: 1.4;
+			color: #333;
+			font-family: "Georgia", serif;
+			overflow-y: scroll;
+			}
+		
+		p, ul, ol, blockquote, figure, pre, iframe {
+			margin-bottom: 30px;
+			}
+		
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: bold;
+			font-family: "Helvetica", sans-serif;
+			margin-bottom: 0;
+			}
+		
+		a {
+			color: #333;
+			text-decoration: none;
+			border-bottom: 2px solid #333;
+			}
+		
+		ul {
+			list-style-type: disc;
+			}
+		
+		ul, ol {
+			padding-left: 25px;
+			}
+			
+		li {
+		 	margin-bottom: 5px;
+		 	}
+		 
+		.thought-content {
+			margin-bottom: 60px;
+			border-bottom: 1px solid #aaa;
+		 	}
+		 
+		.project {
+		 	font-size: 30px;
+		 	margin: 40px 0 60px 0;
+		 	}
+		 	
+		blockquote {
+		 	width: 75%;
+		 	margin-left: auto;
+		 	margin-right: auto;
+		 	color: #777;
+		 	border-left: double 4px #ccc;
+		 	font-style: italic;
+		 	padding-left: 20px;
+		 	font-size: .9em;
+		 	}
+		 
+		figcaption {
+		 	text-align: right;
+		 	}
+		 
+		code {
+		 	border: 1px solid #ccc;
+		 	border-radius: 3px;
+		 	background: #fafafa;
+		 	font-family: monospace;
+		 	font-size: .9em;
+		 	}
+		 
+		pre {
+		 	background: #555;
+		 	color: white;
+		 	border-radius: 5px;
+		 	padding: 10px;
+		 	}
+		 	
+		pre code {
+		 	border: 0;
+		 	background: #555;
+		 	font-size: .8em;
+		 	white-space: pre-wrap;
+		 	}
+
+		.footnote {
+			font-size: .8em;
+			position: relative;
+			color: #777;
+			padding-top: .4em;
+			}
+
+		.footnote:before {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 1px;
+			background: #777;
+			width: 20%;
+			}
+
+		hr {
+		 	margin-bottom: 40px;
+		 	}
+		 
+		.baked-by {
+		 	font-weight: bold;
+		 	}
+		 	
+    </style>
+  </head>
+  <body>
+    
+    <p class="project">The Pastry Box Project</p>
+
+    
+    <h1>Sunday, 6 May 2012</h1>
+    
+    <p class="baked-by">baked by John Allsopp</p>
+    
+    <div class="thought-content">
+       <p>In the last 12 months or so, I've had a number of quite specific online conversations about the performance of web technologies. Indeed, some of these conversations go back quite a bit before that. </p><p>Most recently, I critiqued a spate of articles arguing that localStorage suffers from performance issues (well, might in theory, <a href="http://www.webdirections.org/blog/localstorage-perhaps-not-so-harmful/">though evidence suggests otherwise</a>).</p><p>9 months or so ago, for reasons best known to myself, I posted a <a href="http://blog.theunpluggedweb.com/post/6536550719/the-native-is-better-thing-again-sigh">point by point critique</a> of one of John Gruber's typically fact free pieces asserting that native apps are inherently better than apps developed with web technologies. At the heart of these arguments is the issue of performance. </p><p>Developers care a lot about performance. The mark of a quality application is responsiveness. Not in the sense we've come to use it recently, but in the sense of the perceived lag between a user's action and the outcome.</p><p>Typically, these conversations are about performance in the absolute—for example, it's frequently asserted that any "native" app will always be faster than a web app, because native apps are compiled, and web apps use interpreted JavaScript.</p><p>But this is essentially a meaningless observation, because performance is just one small, although of course very important, piece of the puzzle. Lower level, more highly performant languages may well impact time to market, cost of development, platform reach, and more.</p><p>Practical developers typically care not about overall performance, but the bottlenecks where performance becomes an issue—often because it impacts the user experience. Developers optimize for those bottlenecks, and it's only when after all optimisation, performance remains below a certain threshold that we have a real issue.</p><p>In essence, at present most conversations about performance take place at an ideological level. Where we need them to take place is the practical level.</p><p>When someone observes something lacks performance, is "slow", or however this is characterised, hand waving like "compiled is always faster than interpreted" or "synchronous is always slower than asynchronous" miss the point. What we need to do is:</p><ol><li> Identify the specific, measurable performance issue</li><li> Benchmark this, so as to meaningfully compare it with alternatives, and also to derive a measure of what is adequate (in performance, as elsewhere, the perfect is often the enemy of the good)</li><li> Look for optimisations which can help provide adequate solutions in the given circumstances</li></ol><p>We have a genuine issue when we can't do the third step.</p><p>Too often we fall into black and white thinking, which is anathema to engineering, the art of making stuff work. In engineering being right isn't as important as solving the problem. Sure, rhetorical discussions may be engaging, but they don't really solve much. </p><p>When it comes to development, we have so much to learn. Glibness won't help us do that.</p>
+    </div>
+  
+  </body>
+</html>

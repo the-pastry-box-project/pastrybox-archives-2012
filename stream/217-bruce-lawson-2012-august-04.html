@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en" class="">
+  <head>
+    <meta charset="utf-8">
+    <title>The Pastry Box Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="@alexduloz">
+    <style>
+    	* {
+    		margin: 0;
+    		padding: 0;
+    		-webkit-box-sizing: border-box;
+  			-moz-box-sizing: border-box;
+  			box-sizing: border-box;
+    		}
+    		
+		body {
+			width: 100%;
+			max-width: 800px;
+			padding: 40px 20px 0 20px;
+			margin: 0 auto;
+			padding-top: 40px;
+			font-size: 24px;
+			line-height: 1.4;
+			color: #333;
+			font-family: "Georgia", serif;
+			overflow-y: scroll;
+			}
+		
+		p, ul, ol, blockquote, figure, pre, iframe {
+			margin-bottom: 30px;
+			}
+		
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: bold;
+			font-family: "Helvetica", sans-serif;
+			margin-bottom: 0;
+			}
+		
+		a {
+			color: #333;
+			text-decoration: none;
+			border-bottom: 2px solid #333;
+			}
+		
+		ul {
+			list-style-type: disc;
+			}
+		
+		ul, ol {
+			padding-left: 25px;
+			}
+			
+		li {
+		 	margin-bottom: 5px;
+		 	}
+		 
+		.thought-content {
+			margin-bottom: 60px;
+			border-bottom: 1px solid #aaa;
+		 	}
+		 
+		.project {
+		 	font-size: 30px;
+		 	margin: 40px 0 60px 0;
+		 	}
+		 	
+		blockquote {
+		 	width: 75%;
+		 	margin-left: auto;
+		 	margin-right: auto;
+		 	color: #777;
+		 	border-left: double 4px #ccc;
+		 	font-style: italic;
+		 	padding-left: 20px;
+		 	font-size: .9em;
+		 	}
+		 
+		figcaption {
+		 	text-align: right;
+		 	}
+		 
+		code {
+		 	border: 1px solid #ccc;
+		 	border-radius: 3px;
+		 	background: #fafafa;
+		 	font-family: monospace;
+		 	font-size: .9em;
+		 	}
+		 
+		pre {
+		 	background: #555;
+		 	color: white;
+		 	border-radius: 5px;
+		 	padding: 10px;
+		 	}
+		 	
+		pre code {
+		 	border: 0;
+		 	background: #555;
+		 	font-size: .8em;
+		 	white-space: pre-wrap;
+		 	}
+
+		.footnote {
+			font-size: .8em;
+			position: relative;
+			color: #777;
+			padding-top: .4em;
+			}
+
+		.footnote:before {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 1px;
+			background: #777;
+			width: 20%;
+			}
+
+		hr {
+		 	margin-bottom: 40px;
+		 	}
+		 
+		.baked-by {
+		 	font-weight: bold;
+		 	}
+		 	
+    </style>
+  </head>
+  <body>
+    
+    <p class="project">The Pastry Box Project</p>
+
+    
+    <h1>Saturday, 4 August 2012</h1>
+    
+    <p class="baked-by">baked by Bruce Lawson</p>
+    
+    <div class="thought-content">
+       <h1>On standards and sausages<p>In any industry, standards are vital, and the Web industry is no different.</h1><p>After the dark days of the browser Wars, in which Microsoft and Netscape competed on adding ever more proprietary whizz-bangs to lock developers in – ahem, more deeply engage developers into their eco-systems, I mean – we&rsquo;re in an age when all browser and tool vendors compete to tell you how great their standards support is. And this is A Good Thing&trade;.</p><p>As <a href="http://en.wikiquote.org/wiki/Otto_von_Bismarck#Misattributed">Bismarck never said</a> &ldquo;Laws are like sausages. You should never see them being made&rdquo; and the same is true of standards. There are many ways to make a standard – some more palatable than others.</p><p>Some things are defacto standards – GIF, JPG, webM, h264. Others, like JavaScript (more accurately, ECMAscript) are made by a committee in a smoky room – in the case of ECMAscript, a group with the sinister name of <a href="http://www.ecma-international.org/memento/TC39.htm">TC39</a>.</p><p>Others are retrospectively standardised at the end of their evolution from proprietary whizzbang to defacto standard to real standard. Examples of this are some of Microsoft&rsquo;s best gifts to the Web: XMLHttpRequest (XHR) which powers almost all Ajax-driven sites, innerHTML and contentEditable.</p><p>Another example, this time from Apple, is &lt;canvas&gt; – invented for Apple&rsquo;s dashboard widgets, liked by everyone and so reverse-engineered and improved by Mozilla, reverse-engineered and implemented by Opera, reverse-engineered and specified by Ian Hickson as part of the HTML5 effort. When Microsoft wanted to implement it, they didn&rsquo;t have to waste hundreds or thousands of man-hours reverse engineering, with its stupid waste of time and potential to introduce interoperability-damaging bugs: they just picked up the spec and implemented what it said.</p><p>But as the editor of HTML5, <a href="http://ln.hixie.ch/?start=1089635050&amp;count=1">Ian Hickson</a>, said of &lt;canvas&gt;, &ldquo;The real solution is to bring these proposals to the table, get some consensus between the relevant vendors and other interested parties, and then use that.&rdquo;</p><p>The best kind of standards process involves as many competitor stakeholders as possible going completely crazy:</p><ul><li>sharing ideas</li><li>trying out ideas in their own labs and sharing results</li><li>discussing openly</li><li>compromising where necessary to achieve concensus</li><li>implementing what has been specified.</li></ul><p>This is how the HTML5 effort has worked. Anne van Kesteren <a href="http://annevankesteren.nl/2012/07/passion">described it</a>:</p><blockquote><p>We developed HTML in the open, taking input from anyone, and pretty much from anywhere (mostly tracking blogs back in the day). Until that point HTML was by and large developed by a committee in private meetings.</p></blockquote><p>But the collegiate, co-operative, <em>productive</em> working environment that bloomed so encouragingly seems to be withering.</p><p>More and more, we see different companies seeking to solve similar problems secretly, and without discussion. This is why we have many formats for <a href="http://www.brucelawson.co.uk/2011/installable-web-apps-and-interoperability/">packaged/installable Web applications</a>. Of course, each company promises that it will <em>eventually</em> standardise its solution to the problem, leading to <a href="http://xkcd.com/927/">a proliferation of &ldquo;standards&rdquo;</a>.</p><p>Trying stuff out (perhaps with vendor prefixes) and reporting back is a vital part if standardisation. But presenting whole new features as a fait accompli, and encouraging their use by developers on the open Web loses discussion, the sharing of ideas and results from the process. The end-result loses ease for developers and, ultimately, interoperability for consumers – you know, the great unwashed that we actually make Websites for.</p><p>Tossing a specification that you&rsquo;ve written in-house, in secret and already implemented onto a table at W3C, saying &ldquo;here, standardise this&rdquo; as you saunter past isn&rsquo;t a Get Out of Jail Free card for proprietary misdemeanours. And it isn&rsquo;t standardisation.</p>
+    </div>
+  
+  </body>
+</html>

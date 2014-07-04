@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en" class="">
+  <head>
+    <meta charset="utf-8">
+    <title>The Pastry Box Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="@alexduloz">
+    <style>
+    	* {
+    		margin: 0;
+    		padding: 0;
+    		-webkit-box-sizing: border-box;
+  			-moz-box-sizing: border-box;
+  			box-sizing: border-box;
+    		}
+    		
+		body {
+			width: 100%;
+			max-width: 800px;
+			padding: 40px 20px 0 20px;
+			margin: 0 auto;
+			padding-top: 40px;
+			font-size: 24px;
+			line-height: 1.4;
+			color: #333;
+			font-family: "Georgia", serif;
+			overflow-y: scroll;
+			}
+		
+		p, ul, ol, blockquote, figure, pre, iframe {
+			margin-bottom: 30px;
+			}
+		
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: bold;
+			font-family: "Helvetica", sans-serif;
+			margin-bottom: 0;
+			}
+		
+		a {
+			color: #333;
+			text-decoration: none;
+			border-bottom: 2px solid #333;
+			}
+		
+		ul {
+			list-style-type: disc;
+			}
+		
+		ul, ol {
+			padding-left: 25px;
+			}
+			
+		li {
+		 	margin-bottom: 5px;
+		 	}
+		 
+		.thought-content {
+			margin-bottom: 60px;
+			border-bottom: 1px solid #aaa;
+		 	}
+		 
+		.project {
+		 	font-size: 30px;
+		 	margin: 40px 0 60px 0;
+		 	}
+		 	
+		blockquote {
+		 	width: 75%;
+		 	margin-left: auto;
+		 	margin-right: auto;
+		 	color: #777;
+		 	border-left: double 4px #ccc;
+		 	font-style: italic;
+		 	padding-left: 20px;
+		 	font-size: .9em;
+		 	}
+		 
+		figcaption {
+		 	text-align: right;
+		 	}
+		 
+		code {
+		 	border: 1px solid #ccc;
+		 	border-radius: 3px;
+		 	background: #fafafa;
+		 	font-family: monospace;
+		 	font-size: .9em;
+		 	}
+		 
+		pre {
+		 	background: #555;
+		 	color: white;
+		 	border-radius: 5px;
+		 	padding: 10px;
+		 	}
+		 	
+		pre code {
+		 	border: 0;
+		 	background: #555;
+		 	font-size: .8em;
+		 	white-space: pre-wrap;
+		 	}
+
+		.footnote {
+			font-size: .8em;
+			position: relative;
+			color: #777;
+			padding-top: .4em;
+			}
+
+		.footnote:before {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 1px;
+			background: #777;
+			width: 20%;
+			}
+
+		hr {
+		 	margin-bottom: 40px;
+		 	}
+		 
+		.baked-by {
+		 	font-weight: bold;
+		 	}
+		 	
+    </style>
+  </head>
+  <body>
+    
+    <p class="project">The Pastry Box Project</p>
+
+    
+    <h1>Tuesday, 6 November 2012</h1>
+    
+    <p class="baked-by">baked by John Allsopp</p>
+    
+    <div class="thought-content">
+       <h1>Before and after Apps </h1><p>In some (very small, for the most part insignificant) circles, I&rsquo;m known as the anti-native-apps guy.</p><p>Which is in many ways fair. For years, I&rsquo;ve argued that <a href="http://www.webdirections.org/blog/iphone-native-apps-the-great-leap-backwards/">the supposed commercial benefits to developers are largely illusory</a> (something I continue to believe, and which the last several years largely demonstrates).</p><p>But, my principal concern with apps was actually best expressed last year by Scott Jensen, legendary HCI expert at Apple, Symbian, Google and now Frog Design, in his provocatively titled &ldquo;<a href="http://designmind.frogdesign.com/blog/mobile-apps-must-die.html">Native Apps Must Die</a>&rdquo;.</p><blockquote>Native apps are a remnant of the Jurassic period of computer history, a local maximum that is holding us back. The combination of a discovery service and just-in-time interaction is a powerful interaction model that native apps can’t begin to offer.</blockquote><p>Apps are a model of functionality that has shaped both what developers and designers do, and how users conceive of what&rsquo;s possible more or less for the entire history of computing. But I think they are a dead end.</p><p>One interesting detour from the app-centric model of computing was the <a href="http://en.wikipedia.org/wiki/Apple_Lisa">Lisa</a> operating system, the not quite fore-runner to the Macintosh from Apple. Lisa differed markedly from the Macintosh, and other graphical operating systems, in that it was document centric. You didn&rsquo;t open applications to edit documents, you opened documents to work on them. Users focussed on the task at hand, not the tool.</p><p>Changing this conception of what a user experience might be is very difficult, so ingrained is the app-centric model with users, and among ourselves as designers and developers. But what might a more user-centric model look like?</p><p>Let&rsquo;s take a very popular consumer application/service right now. Photo hosting. Well, it&rsquo;s been popular for quite some time, with services like Flickr now several years old, and then Instagram and numerous similar services emerging particularly with the rise of smart phones.</p><p>But all of these services are monolithic—indeed are becoming more so. Most if not all of what a user can do with them takes place inside one application (this is particularly true of services like Instagram). You shoot, apply effects, crop, tag, annotate and upload all within the application. In the case of Instagram you also sign up, search, follow people, in short, access the entire Instagram experience from inside the Instagram app.</p><p>While we think of apps and services like these as photo-sharing services, they aren&rsquo;t really. Instagram is an Instagram app. Facebook is a Facebook app. Twitter increasingly is a Twitter app (as soon as they can get rid of all those other pesky client apps). The application, the service, is an end in itself.</p><p>So, what might a user focussed, post-app photo sharing service (experience? thing?) (let&rsquo;s call it phUto) look like.</p><p>At its core, it would be a place to upload photos which people could view. Some users might want to apply filters and effects to their photos. Now, if I were building phUto, I might build that functionality into it. <strong>Or</strong>, I might make it possible for other developers to provide the user this functionality, ideally in a way that felt seamlessly part of phUto.</p><p>Users might want to search the photos stored at phUto. I could build a search engine, and results experience. Or, I could make it easy for developers to provide this functionality, and a way for my users to <strong>easily discover</strong> these search services, and use them in a way that feels like it&rsquo;s a seamless experience.</p><p>You get the idea.</p><p>There have been complex attempts to enable this in the past. <a href="http://en.wikipedia.org/wiki/OpenDoc">OpenDoc</a>, an enormous undertaking by Apple in the mid 1990s was among the most sophisticated of such attempts. Microsoft&rsquo;s ActiveX similarly was designed to enable unrelated pieces of functionality work together. But recently, more lightweight approaches among them <a href="http://www.vogella.com/articles/AndroidIntent/article.html">Android</a> Intents and <a href="http://webintents.org">Web</a> Intents.</p><p>But as much as the technology for enabling this is important, the underlying concept is crucial.</p><p>The app model essentially creates silos of functionality, carefully created for the user. It gives rise to feature creep, and rewards large teams with lots of engineering resources over smaller teams and individuals who focus on one thing they can do really well.</p><p>Perhaps in a decade, or a century, we&rsquo;ll still be working with monolithic apps. But I suspect (and certainly hope) not.</p>
+    </div>
+  
+  </body>
+</html>

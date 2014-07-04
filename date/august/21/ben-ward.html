@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en" class="">
+  <head>
+    <meta charset="utf-8">
+    <title>The Pastry Box Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="@alexduloz">
+    <style>
+    	* {
+    		margin: 0;
+    		padding: 0;
+    		-webkit-box-sizing: border-box;
+  			-moz-box-sizing: border-box;
+  			box-sizing: border-box;
+    		}
+    		
+		body {
+			width: 100%;
+			max-width: 800px;
+			padding: 40px 20px 0 20px;
+			margin: 0 auto;
+			padding-top: 40px;
+			font-size: 24px;
+			line-height: 1.4;
+			color: #333;
+			font-family: "Georgia", serif;
+			overflow-y: scroll;
+			}
+		
+		p, ul, ol, blockquote, figure, pre, iframe {
+			margin-bottom: 30px;
+			}
+		
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: bold;
+			font-family: "Helvetica", sans-serif;
+			margin-bottom: 0;
+			}
+		
+		a {
+			color: #333;
+			text-decoration: none;
+			border-bottom: 2px solid #333;
+			}
+		
+		ul {
+			list-style-type: disc;
+			}
+		
+		ul, ol {
+			padding-left: 25px;
+			}
+			
+		li {
+		 	margin-bottom: 5px;
+		 	}
+		 
+		.thought-content {
+			margin-bottom: 60px;
+			border-bottom: 1px solid #aaa;
+		 	}
+		 
+		.project {
+		 	font-size: 30px;
+		 	margin: 40px 0 60px 0;
+		 	}
+		 	
+		blockquote {
+		 	width: 75%;
+		 	margin-left: auto;
+		 	margin-right: auto;
+		 	color: #777;
+		 	border-left: double 4px #ccc;
+		 	font-style: italic;
+		 	padding-left: 20px;
+		 	font-size: .9em;
+		 	}
+		 
+		figcaption {
+		 	text-align: right;
+		 	}
+		 
+		code {
+		 	border: 1px solid #ccc;
+		 	border-radius: 3px;
+		 	background: #fafafa;
+		 	font-family: monospace;
+		 	font-size: .9em;
+		 	}
+		 
+		pre {
+		 	background: #555;
+		 	color: white;
+		 	border-radius: 5px;
+		 	padding: 10px;
+		 	}
+		 	
+		pre code {
+		 	border: 0;
+		 	background: #555;
+		 	font-size: .8em;
+		 	white-space: pre-wrap;
+		 	}
+
+		.footnote {
+			font-size: .8em;
+			position: relative;
+			color: #777;
+			padding-top: .4em;
+			}
+
+		.footnote:before {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 1px;
+			background: #777;
+			width: 20%;
+			}
+
+		hr {
+		 	margin-bottom: 40px;
+		 	}
+		 
+		.baked-by {
+		 	font-weight: bold;
+		 	}
+		 	
+    </style>
+  </head>
+  <body>
+    
+    <p class="project">The Pastry Box Project</p>
+
+    
+    <h1>Tuesday, 21 August 2012</h1>
+    
+    <p class="baked-by">baked by Ben Ward</p>
+    
+    <div class="thought-content">
+       <p>In 2010 I <a href="http://munchmun.ch/2010/04/living-baking/">attended</a> a workshop in San Francisco entitled ‘starter care.’ It was about the art of bread making; specifically sourdough, which is the staple variety of bread in West Coast America. The starter is a simple flour and water mix, nurtured over time to cultivate natural yeasts. You feed the starter regularly with fresh flour and water, maintaining a certain consistency to your preference; some bakers keep a very dry, dough-like starter, others abhor viscosity. When it comes to bake a loaf, you feed the starter once more, extract a sample, and use that as the base of your bread dough.</p><p>Over time—years, even—each unique starter takes on its own unique flavours and the loaves you bake from it will be unique in their way.</p><p>There&#8217;s one other aspect of bread making culture that&#8217;s noteworthy here, and that&#8217;s sharing. The same starter, constantly fed and replenished, can be maintained for decades; forever, really. Often, when someone begins a new starter they will take a sample of another, and use those cultures as the basis for their own rather than work from nothing. Furthermore, it&#8217;s a heartfelt kindness to give someone a sample of your starter as a gift (the starter I have at present came to me this way.) Over time there will be variance from the original. The flour and water ratio may change, and the air and water in the different environment will introduce new bacteria, changing the flavours of the yeasts growing within.</p><p>I&#8217;m leading up to a glaring software development analogy, but I want to focus on something specific. In open source we mostly celebrate singular projects: Centralised entities run in the open, accepting patches from far and wide to strengthen a core. Your JQueries, Bootstraps, and so forth. I want to draw attention to the starters of software; the code that people share not with the intention of getting patches back, but code that provides for someone the superior basis for their own work.</p><p>A number of years ago, my friend and colleague <a href="http://marknormanfrancis.com">Mark Norman Francis</a> put <a href="https://github.com/norm/homedir">his unix home directory</a> on GitHub. Within that repository is a katamari of scripts that Norm uses on a day-to-day basis to operate his computer. This is not code that you would necessarily run as-is on your machine; the purpose of sharing was for people to use it as a starter; a successful structure from which to learn and reuse and go your own way. The <a href="https://github.com/norm/homedir/network">network graph</a> shows a dozen others forking the work and tailoring this open code to do whatever they need to do with their machines, all making something unique of their own, all the better for the starter Norm gave them.</p><p>Likewise, <a href="http://jekyllrb.com">Jekyll</a> bloggers share the source for <a href="https://github.com/mojombo/jekyll/wiki/Sites">site structures</a> to help others start their own blogs from scratch, and projects like <a href="http://html5boilerplate.com">HTML5 Boilerplate</a> carry a similar spirit of being the starting point for new, unique things.</p><p>The most wonderful success of open source is not in its behemoth projects, but in the establishment of an institutional, cultural normality wherein which people share what they have with anyone who wants it. It is a heartfelt kindness to give someone a sample of your starter.</p>
+    </div>
+  
+  </body>
+</html>

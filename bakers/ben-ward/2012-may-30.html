@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en" class="">
+  <head>
+    <meta charset="utf-8">
+    <title>The Pastry Box Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="@alexduloz">
+    <style>
+    	* {
+    		margin: 0;
+    		padding: 0;
+    		-webkit-box-sizing: border-box;
+  			-moz-box-sizing: border-box;
+  			box-sizing: border-box;
+    		}
+    		
+		body {
+			width: 100%;
+			max-width: 800px;
+			padding: 40px 20px 0 20px;
+			margin: 0 auto;
+			padding-top: 40px;
+			font-size: 24px;
+			line-height: 1.4;
+			color: #333;
+			font-family: "Georgia", serif;
+			overflow-y: scroll;
+			}
+		
+		p, ul, ol, blockquote, figure, pre, iframe {
+			margin-bottom: 30px;
+			}
+		
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: bold;
+			font-family: "Helvetica", sans-serif;
+			margin-bottom: 0;
+			}
+		
+		a {
+			color: #333;
+			text-decoration: none;
+			border-bottom: 2px solid #333;
+			}
+		
+		ul {
+			list-style-type: disc;
+			}
+		
+		ul, ol {
+			padding-left: 25px;
+			}
+			
+		li {
+		 	margin-bottom: 5px;
+		 	}
+		 
+		.thought-content {
+			margin-bottom: 60px;
+			border-bottom: 1px solid #aaa;
+		 	}
+		 
+		.project {
+		 	font-size: 30px;
+		 	margin: 40px 0 60px 0;
+		 	}
+		 	
+		blockquote {
+		 	width: 75%;
+		 	margin-left: auto;
+		 	margin-right: auto;
+		 	color: #777;
+		 	border-left: double 4px #ccc;
+		 	font-style: italic;
+		 	padding-left: 20px;
+		 	font-size: .9em;
+		 	}
+		 
+		figcaption {
+		 	text-align: right;
+		 	}
+		 
+		code {
+		 	border: 1px solid #ccc;
+		 	border-radius: 3px;
+		 	background: #fafafa;
+		 	font-family: monospace;
+		 	font-size: .9em;
+		 	}
+		 
+		pre {
+		 	background: #555;
+		 	color: white;
+		 	border-radius: 5px;
+		 	padding: 10px;
+		 	}
+		 	
+		pre code {
+		 	border: 0;
+		 	background: #555;
+		 	font-size: .8em;
+		 	white-space: pre-wrap;
+		 	}
+
+		.footnote {
+			font-size: .8em;
+			position: relative;
+			color: #777;
+			padding-top: .4em;
+			}
+
+		.footnote:before {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 1px;
+			background: #777;
+			width: 20%;
+			}
+
+		hr {
+		 	margin-bottom: 40px;
+		 	}
+		 
+		.baked-by {
+		 	font-weight: bold;
+		 	}
+		 	
+    </style>
+  </head>
+  <body>
+    
+    <p class="project">The Pastry Box Project</p>
+
+    
+    <h1>Wednesday, 30 May 2012</h1>
+    
+    <p class="baked-by">baked by Ben Ward</p>
+    
+    <div class="thought-content">
+       <p>Recently, the internet delighted in petty squabbles between developers over what I&#8217;ll generically refer to as ‘technical style.’ I&#8217;m going to skip the sideshow of specifics, but they each involved punctuation, to a greater or lesser degree. Wound up inside these arguments over technical style are preferences over tooling, education, expected competence, different interpretations and experiences of interoperability.</p><p>It&#8217;s not a generational divide based on age (although there&#8217;s possibly some correlation), and it&#8217;s not defined by total accrued experience (although there&#8217;s possibly some correlation.) It&#8217;s just trends. Where a technology permits flexibility, people will rightly explore and experiment, looking for variations that are somehow better than the status quo. We iterate on performance, clarity, and aesthetics all the time in the products we build, and so we do with the tools we use to build them too. It comes in waves, and sometimes cultivates a scene along the way. People have been doing this with HTML, CSS, and JavaScript for a very long time. This industry as we know it grew up on the back of trends, perhaps most influentially the post&#8211;2000 adherence to XHTML: Although at its core XML is a bad idea for web publishing (unrecoverable rendering errors for content, brilliant!), the trend carried with it a revolutionary education in separated concerns, cross-browser design, and graceful degradation that lynchpins web professionalism today. Each successive wave of web developers can be expected to experiment in their own way, because this technology stack allows us to, and because it&#8217;s a powerful way of learn in and of itself.</p><p>As people learn, they document findings, either adding to the common school of thought, or rebelling against it. There will be both right and weak conclusions. With time and experience, the better writing turns into more substantial references, like books. Then those articles and books depreciate as the examples within them age.</p><p>Here&#8217;s our problem: In each generation of web development, we are leaving people to relearn the same lessons of the last. There are techniques backing various aspects of technical style that should be stable and constant by this point. There were strong reasons for one style to be advocated over others in the first place, right?</p><p>Two two noisy tribes: One experimenting with their web technology, fluency and productivity through variations in style. Opposition to this starts with a legitimate technical hurdle, but is followed by a torrent of establishment and dogma. Given that research over ten years has gone into establishing the style guide of the web, surely someone would be able to simply <em>reference</em> an earlier work? Everyone interested could revise the issue, reestablish the conclusions, and move on.</p><p>But nobody referenced anything in these debates.</p><p>Instead we got superiority complexes, and snark, and trolling, and image macros. In vacuum of authoritative references, some rushed out to write new ones, immediately muddling technical worth with ego, and vapid condescension. Elsewhere, a banal portmanteau is uttered with hair-brained sincerity. A kitten dies.</p><p>We&#8217;ve taken our knowledge for granted, passed it on with examples and well-meaning advice, but failed to establish our references. It&#8217;s a different kind of archival shortcoming. We often think of redundantly storing all of our web content, but here we&#8217;ve failed as librarians. We knew the knowledge was out there, we trusted the knowledge, but when it was challenged no-one had a robust answer. In its place, dogmatic presumption undermines a lot of the effort around education and best practice, and the cooperative attitudes of our community.</p><p>Besides insufficient cataloguing, one reason for uncontentious, enduring references on technical style to evade us is because they&#8217;re attached to otherwise ephemeral writing. These patterns we take for granted aren&#8217;t being documented well enough. Because the examples we use age. Because the contexts they&#8217;re presented in become obsolete and confusing as browsers. Because we don&#8217;t have time to be librarians, because we&#8217;re building new stuff, because we&#8217;re teaching by example. This is all defensible, but it&#8217;s evidently not good enough. We can&#8217;t work from the prescribed style to a full understanding of the language. If we believe in the web, we have an obligation to support the education of our peers and ourselves; the technology we use is always changing, no-one will ever stop learning. Perhaps this requires a kind of reference writing that blogs and magazines have neglected, but which is done well in other technical writing efforts that avoid issues of style: API documentation, for example.</p><p>Technical style is just one small piece of building a successful technical platform from the web. If we care about style—and apparently we do—we need to do better at recording it. We need to build better teaching materials, we need to ensure that people can establish a full understanding of the web and its technology, not just the pieces we ring-fenced as ‘safe’. We need to write for our industry&#8217;s encyclopedia, not just its tabloid.</p>
+    </div>
+  
+  </body>
+</html>
